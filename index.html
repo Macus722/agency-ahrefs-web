@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="zh-CN" class="scroll-smooth">
   <head>
+    <link rel="stylesheet" href="./assets/tailwind.min.css">
   <link rel="icon" href="../../../../../assets/logo_transparent.png" />
     <meta charset="UTF-8" />
     <meta name="google-site-verification" content="ctkXopeTcuKMOepxbFQTGigHVltdi2VK9Ix9NDZGMmA" />
@@ -45,73 +46,18 @@
       }
     }
     </script>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'system-ui', 'sans-serif'],
-            },
-            colors: { 
-              brand: { 
-                orange: '#ff8000',
-                blue: '#1462ff',
-                navy: '#012f56',
-                gray: '#5e617d',
-                light: '#f8fafc'
-              } 
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      html{font-size:112.5%;} body { font-family: 'Inter', system-ui, sans-serif; letter-spacing: 0.01em; -webkit-font-smoothing: antialiased; }
-      .fade-up { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
-      .fade-up.visible { opacity: 1; transform: translateY(0); }
-      .btn-cta { transition: background-color 0.2s ease, transform 0.2s ease; }
-      .btn-cta:hover { transform: translateY(-2px); }
-      
-      /* Advanced Creative Animations */
-      @keyframes blob {
-        0% { transform: translate(0px, 0px) scale(1); }
-        33% { transform: translate(30px, -50px) scale(1.1); }
-        66% { transform: translate(-20px, 20px) scale(0.9); }
-        100% { transform: translate(0px, 0px) scale(1); }
-      }
-      .animate-blob { animation: blob 7s infinite; }
-      .animation-delay-2000 { animation-delay: 2s; }
-      .animation-delay-4000 { animation-delay: 4s; }
-      
-      @keyframes gradient {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-      }
-      .animate-gradient { animation: gradient 6s ease infinite; background-size: 200% auto; }
-      
-      @keyframes marquee {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(-100%); }
-      }
-      .animate-marquee { display: flex; animation: marquee 25s linear infinite; }
-      
-      @keyframes shimmer {
-        100% { transform: translateX(100%); }
-      }
-    </style>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
   </head>
   <body class="bg-white text-brand-navy">
     <header class="fixed inset-x-0 top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur-xl shadow-sm">
+    
       <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
         <a href="index.html" class="flex items-center gap-3">
-          <img src="../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain">
+          <img src="../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain" loading="eager">
         </a>
         
         <!-- Mobile Toggle -->
@@ -194,7 +140,7 @@
             <!-- Using a pure CSS radial alpha-mask + mix-blend-multiply guarantees the image mathematically has 0% opacity at its physical edges, making a "bounding box" impossible to see! -->
             <div class="relative w-full h-full lg:w-[130%] xl:w-[145%] lg:-ml-[8%] lg:-mr-[18%] mix-blend-multiply flex items-center justify-center transform hover:scale-[1.02] transition-transform duration-1000" 
                  style="-webkit-mask-image: radial-gradient(55% 60% at 50% 50%, black 70%, transparent 100%); mask-image: radial-gradient(55% 60% at 50% 50%, black 70%, transparent 100%);">
-               <img src="assets/hero_bg_custom.jpg" alt="Hero Mockup" class="w-full h-full object-contain object-center transform scale-[1.32] lg:-translate-x-2 lg:translate-y-4" />
+               <img src="assets/hero_bg_custom.jpg" alt="Hero Mockup" class="w-full h-full object-contain object-center transform scale-[1.32] lg:-translate-x-2 lg:translate-y-4" / loading="eager" fetchpriority="high">
             </div>
             <!-- Massive, soft radial blur patch positioned exactly over the Gemini watermark in the bottom right corner -->
             <div class="absolute bottom-[-10px] -right-4 xl:-right-12 w-80 h-80 bg-[#F8FAFC] rounded-full blur-[80px] z-20 pointer-events-none"></div>
@@ -232,7 +178,7 @@
             <!-- Step 1 -->
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
               <div class="order-2 lg:order-1 relative rounded-[2rem] overflow-hidden shadow-2xl shadow-brand-navy/5 aspect-video lg:aspect-[4/3] group">
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600" alt="Tech SEO Framework" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" />
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600" alt="Tech SEO Framework" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" / loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-tr from-brand-navy/60 to-transparent pointer-events-none opacity-80 mix-blend-multiply"></div>
               </div>
               <div class="order-1 lg:order-2">
@@ -250,14 +196,14 @@
                 <p class="text-brand-gray text-[17px] leading-[1.8] font-medium">专有的主题集群和实体链接策略，帮助您在传统算法和生成式引擎中抓取海量搜索流量红利。通过执行最前沿的 AEO（答案引擎优化）与 GEO 策略矩阵，让您的品牌全面占据所有首选的答案引擎入口，而不仅限于十个蓝色链接。</p>
               </div>
               <div class="order-2 lg:order-2 relative rounded-[2rem] overflow-hidden shadow-2xl shadow-brand-navy/5 aspect-video lg:aspect-[4/3] group bg-slate-50">
-                <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80&w=1600" alt="AI Search Dominance" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" />
+                <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80&w=1600" alt="AI Search Dominance" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" / loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-tr from-brand-orange/20 to-brand-navy/20 pointer-events-none mix-blend-multiply opacity-60"></div>
               </div>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
               <div class="order-2 lg:order-1 relative rounded-[2rem] overflow-hidden shadow-2xl shadow-brand-navy/5 aspect-video lg:aspect-[4/3] group bg-brand-navy">
-                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600" alt="Global Ecosystem Link Building" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" />
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1600" alt="Global Ecosystem Link Building" class="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105" / loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-bl from-brand-navy/30 to-slate-900/60 pointer-events-none mix-blend-multiply opacity-80"></div>
               </div>
               <div class="order-1 lg:order-2">
@@ -283,7 +229,7 @@
           
           <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
             <a href="solutions/seo-services.html" class="group relative overflow-hidden rounded-[2.5rem] h-[360px] shadow-lg flex flex-col justify-end p-8 md:p-12 border border-slate-900/10">
-              <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=1200" alt="SEO Services" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-[1.05] z-0">
+              <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=1200" alt="SEO Services" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-[1.05] z-0" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent z-10 transition-opacity duration-700 opacity-90 group-hover:opacity-100"></div>
               <div class="relative z-20 transform transition-transform duration-700 group-hover:-translate-y-2">
                 <div class="flex justify-between items-center mb-4">
@@ -295,7 +241,7 @@
             </a>
             
             <a href="solutions/geo-services.html" class="group relative overflow-hidden rounded-[2.5rem] h-[360px] shadow-lg flex flex-col justify-end p-8 md:p-12 border border-slate-900/10">
-              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200" alt="GEO Services" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-[1.05] z-0">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1200" alt="GEO Services" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-[1.05] z-0" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-slate-900/10 z-10 transition-opacity duration-700 opacity-90 group-hover:opacity-100"></div>
               <div class="relative z-20 transform transition-transform duration-700 group-hover:-translate-y-2">
                 <div class="flex justify-between items-center mb-4">
@@ -307,7 +253,7 @@
             </a>
 
             <a href="solutions/aeo-services.html" class="group relative overflow-hidden rounded-[2.5rem] h-[360px] shadow-lg flex flex-col justify-end p-8 md:p-12 border border-slate-900/10">
-              <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200" alt="AEO Services" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-[1.05] z-0">
+              <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=1200" alt="AEO Services" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-[1.05] z-0" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent z-10 transition-opacity duration-700 opacity-90 group-hover:opacity-100"></div>
               <div class="relative z-20 transform transition-transform duration-700 group-hover:-translate-y-2">
                 <div class="flex justify-between items-center mb-4">
@@ -319,7 +265,7 @@
             </a>
 
             <a href="local-seo-malaysia.html" class="group relative overflow-hidden rounded-[2.5rem] h-[360px] shadow-lg flex flex-col justify-end p-8 md:p-12 border border-slate-900/10">
-              <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1200" alt="Local SEO Malaysia" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-[1.05] z-0">
+              <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=1200" alt="Local SEO Malaysia" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-[1.05] z-0" loading="lazy">
               <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/70 to-transparent z-10 transition-opacity duration-700 opacity-90 group-hover:opacity-100"></div>
               <div class="relative z-20 transform transition-transform duration-700 group-hover:-translate-y-2">
                 <div class="flex justify-between items-center mb-4">
@@ -395,7 +341,7 @@
         <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <a href="articles/industry-keywords-seo.html" class="group relative flex flex-col bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-xl hover:shadow-brand-navy/5 hover:border-brand-orange/30 transition-all duration-300">
             <div class="h-44 w-full overflow-hidden relative bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800" alt="Industry SEO" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800" alt="Industry SEO" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
               <div class="absolute inset-0 bg-brand-navy/5"></div>
             </div>
             <div class="p-6 md:p-7 flex-grow flex flex-col bg-white relative z-10">
@@ -412,7 +358,7 @@
 
           <a href="articles/seo-keyword-research.html" class="group relative flex flex-col bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-xl hover:shadow-brand-navy/5 hover:border-brand-orange/30 transition-all duration-300">
             <div class="h-44 w-full overflow-hidden relative bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" alt="SEO Basics" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" alt="SEO Basics" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
               <div class="absolute inset-0 bg-brand-navy/5"></div>
             </div>
             <div class="p-6 md:p-7 flex-grow flex flex-col bg-white relative z-10">
@@ -429,7 +375,7 @@
 
           <a href="articles/technical-seo-guide.html" class="group relative flex flex-col bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-xl hover:shadow-brand-navy/5 hover:border-brand-orange/30 transition-all duration-300">
             <div class="h-44 w-full overflow-hidden relative bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&q=80&w=800" alt="Tech SEO" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?auto=format&fit=crop&q=80&w=800" alt="Tech SEO" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
               <div class="absolute inset-0 bg-brand-navy/5"></div>
             </div>
             <div class="p-6 md:p-7 flex-grow flex flex-col bg-white relative z-10">
@@ -446,7 +392,7 @@
 
           <a href="articles/link-building-guide.html" class="group relative flex flex-col bg-white rounded-3xl border border-gray-200 overflow-hidden hover:shadow-xl hover:shadow-brand-navy/5 hover:border-brand-orange/30 transition-all duration-300">
             <div class="h-44 w-full overflow-hidden relative bg-gray-100">
-              <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&q=80&w=800" alt="Link Building" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+              <img src="https://images.unsplash.com/photo-1557426272-fc759fdf7a8d?auto=format&fit=crop&q=80&w=800" alt="Link Building" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
               <div class="absolute inset-0 bg-brand-navy/5"></div>
             </div>
             <div class="p-6 md:p-7 flex-grow flex flex-col bg-white relative z-10">
@@ -473,7 +419,7 @@
           <!-- LEFT: Brand + Description -->
           <div class="md:col-span-1">
             <a href="index.html" class="flex items-center gap-3 mb-5">
-              <img src="../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain">
+              <img src="../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain" loading="eager">
             </a>
             <p class="text-sm text-brand-navy/60 leading-relaxed">
               Agency Ahrefs 是中文互联网领先的 SEO、GEO 与 AEO 权威知识库。我们系统化解析搜索引擎优化、AI 概览与答案引擎的底层逻辑，提供业界最权威的深度指南、行业研究与数据评测，帮助企业与从业者在瞬息万变的搜索格局中掌握制胜先机。

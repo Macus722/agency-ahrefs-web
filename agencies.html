@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 
 <head>
+    <link rel="stylesheet" href="./assets/tailwind.min.css">
   <link rel="icon" href="../../../../../assets/logo_transparent.png" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +13,7 @@
   <!-- Social Metadata -->
   <meta property="og:title" content="SEO 机构评测目录 | Agency Ahrefs" />
   <meta property="og:description" content="中立、详尽、数据驱动的全球 SEO 机构评估平台。" />
-  <meta property="og:type" content="website" />
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
-  
-  <script>
+  <meta property="og:type" content="website" /><script>
     tailwind.config = {
       theme: {
         extend: {
@@ -51,15 +47,21 @@
       .animate-gradient { animation: gradient 6s ease infinite; background-size: 200% auto; }
       @keyframes shimmer { 100% { transform: translateX(100%); } }
     </style>
-</head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+  </head>
 
 <body class="flex flex-col min-h-screen bg-gray-50 text-brand-navy antialiased">
 
   <!-- Header -->
   <header class="fixed inset-x-0 top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur-xl shadow-sm">
+    
     <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
       <a href="index.html" class="flex items-center gap-3">
-        <img src="../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain">
+        <img src="../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain" loading="eager">
       </a>
 
       <!-- Desktop Nav -->
@@ -110,7 +112,7 @@
 
       <div class="mb-12 w-full aspect-[21/9] rounded-[2rem] overflow-hidden shadow-2xl fade-up relative group">
         <div class="absolute inset-0 bg-brand-navy/20 mix-blend-multiply transition-colors duration-500 z-10 pointer-events-none"></div>
-        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1600" alt="Global SEO Data Network" class="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.03]" />
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1600" alt="Global SEO Data Network" class="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.03]" / loading="lazy">
       </div>
 
       <!-- Filters Section -->
@@ -211,7 +213,7 @@
       <div class="grid md:grid-cols-3 gap-12 mb-12">
         <div class="md:col-span-1">
           <a href="index.html" class="flex items-center gap-3 mb-5">
-            <img src="../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain">
+            <img src="../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain" loading="eager">
           </a>
           <p class="text-sm text-brand-navy/60 leading-relaxed">
             Agency Ahrefs 是中文互联网领先的 SEO、GEO 与 AEO 权威知识库。提供最前沿的行业研究与策略赋能。
@@ -288,7 +290,7 @@
         card.innerHTML = `
           <div class="flex items-start justify-between mb-4">
             <div class="w-16 h-16 rounded-xl border border-gray-100 flex items-center justify-center p-2 overflow-hidden shrink-0 shadow-inner" style="background-color: ${agency.logoBg || '#f8fafc'}">
-              <img src="${agency.logo}" alt="${agency.name} Logo" class="w-full h-full object-contain" onerror="this.src='https://via.placeholder.com/64?text=${agency.name.substring(0,2)}'">
+              <img src="${agency.logo}" alt="${agency.name} Logo" class="w-full h-full object-contain" onerror="this.src='https://via.placeholder.com/64?text=${agency.name.substring(0,2)}'" loading="lazy">
             </div>
             <div class="flex items-center gap-1 bg-yellow-50 text-yellow-600 px-2 py-1 rounded-md text-[11px] font-bold border border-yellow-100/50">
               ⭐ ${fiveScaleRating}

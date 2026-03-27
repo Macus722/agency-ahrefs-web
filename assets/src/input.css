@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Shared animations (previously inline <style> in every page) ─── */
+@keyframes blob {
+  0%   { transform: translate(0px, 0px) scale(1); }
+  33%  { transform: translate(30px, -50px) scale(1.1); }
+  66%  { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+@keyframes gradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
+
+/* ─── Utility classes used across all pages ─── */
+.animate-blob      { animation: blob 7s infinite; }
+.animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-4000 { animation-delay: 4s; }
+.animate-gradient  { animation: gradient 6s ease infinite; background-size: 200% auto; }
+.animate-marquee   { display: flex; animation: marquee 25s linear infinite; }
+
+/* ─── Scroll fade-up animation ─── */
+.fade-up { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+/* ─── Button CTA hover ─── */
+.btn-cta { transition: background-color 0.2s ease, transform 0.2s ease; }
+.btn-cta:hover { transform: translateY(-2px); }
+
+/* ─── Prose / article body styles ─── */
+.prose h2 { font-size: 1.5rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 1rem; color: #012f56; }
+.prose h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: .5rem; color: #012f56; }
+.prose p  { margin-bottom: 1rem; font-size: 1rem; line-height: 1.8; color: #374151; }
+.prose ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
+.prose li { margin-bottom: .4rem; font-size: 1rem; line-height: 1.7; color: #374151; }
+.prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+.prose th { background: #012f56; color: #fff; padding: .6rem 1rem; text-align: left; font-size: .85rem; }
+.prose td { padding: .6rem 1rem; border-bottom: 1px solid #e5e7eb; font-size: .9rem; }
+.prose strong { color: #012f56; }
+
+/* ─── Tag pill (articles) ─── */
+.tag {
+  display: inline-block;
+  padding: .2rem .7rem;
+  border-radius: 9999px;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+/* ─── Line-clamp utility ─── */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ─── Base body ─── */
+html { font-size: 112.5%; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+}
