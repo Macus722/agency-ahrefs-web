@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://landing_page.test/sitemap.xml

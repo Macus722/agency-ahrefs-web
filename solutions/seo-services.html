@@ -1,0 +1,471 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+  <head>
+  <link rel="icon" href="../../../../../../assets/logo_transparent.png" />
+    <meta charset="UTF-8" />
+    <title>Enterprise SEO Services | Search Authority Platform | Agency Ahrefs</title>
+    <meta name="description" content="提升品牌的搜索权威。我们提供企业级 SEO 服务，结合技术审计、内容策略与权威链接建设，助力品牌在 Google 搜索中脱颖而出。" />
+    <meta name="keywords" content="SEO 服务, 企业级 SEO, 搜索引擎优化, 网站审计, 链接建设, 马来西亚 SEO, Google 排名优化, SEO Services, SEO Expert" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="http://landing_page.test/solutions/seo-services.html" />
+
+    <!-- Social Metadata (Open Graph) -->
+    <meta property="og:title" content="Enterprise SEO Services | Agency Ahrefs" />
+    <meta property="og:description" content="通过专业的技术 SEO 与内容策略，建立不可动摇的搜索权威。" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://landing_page.test/solutions/seo-services.html" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Enterprise SEO Solutions",
+      "provider": {
+        "@type": "Organization",
+        "name": "Agency Ahrefs"
+      },
+      "description": "Comprehensive technical SEO, content strategy, and link building services."
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            },
+            colors: { 
+              brand: { 
+                orange: '#ff8000',
+                blue: '#1462ff',
+                navy: '#012f56',
+                gray: '#5e617d',
+                light: '#f8fafc'
+              } 
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html{font-size:112.5%;} body { font-family: 'Inter', system-ui, sans-serif; letter-spacing: 0.01em; -webkit-font-smoothing: antialiased; }
+      .fade-up { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+      .fade-up.visible { opacity: 1; transform: translateY(0); }
+      .btn-cta { transition: background-color 0.2s ease, transform 0.2s ease; }
+      .btn-cta:hover { transform: translateY(-2px); }
+
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      .animate-gradient { animation: gradient 6s ease infinite; background-size: 200% auto; }
+      @keyframes shimmer { 100% { transform: translateX(100%); } }
+    </style>
+  </head>
+  <body class="bg-white text-brand-navy">
+    <header class="fixed inset-x-0 top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur-xl shadow-sm">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
+        <a href="../index.html" class="flex items-center gap-3">
+          <img src="../../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain">
+        </a>
+        
+        <!-- Mobile Toggle -->
+        <button type="button" id="nav-toggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 text-brand-navy hover:text-brand-orange" aria-label="Toggle menu" aria-expanded="false">
+          <svg id="nav-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="nav-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+
+        <!-- Desktop Nav -->
+        <nav id="main-nav" class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-navy">
+          <a href="../index.html" class="hover:text-brand-orange transition-colors">首页</a>
+          
+          <div class="group relative py-4">
+            <button class="flex items-center gap-1 hover:text-brand-orange transition-colors">解决方案 <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button>
+            <div class="absolute top-full left-0 hidden w-56 flex-col rounded-xl border border-gray-100 bg-white shadow-xl group-hover:flex py-2 z-50">
+              <a href="../solutions/seo-services.html" class="px-4 py-2 hover:bg-brand-light hover:text-brand-blue">什么是 SEO</a>
+              <a href="../solutions/geo-services.html" class="px-4 py-2 hover:bg-brand-light hover:text-brand-blue">GEO (AI 概览)</a>
+              <a href="../solutions/aeo-services.html" class="px-4 py-2 hover:bg-brand-light hover:text-brand-blue">AEO (答案引擎)</a>
+              <a href="../local-seo-malaysia.html" class="px-4 py-2 hover:bg-brand-light hover:text-brand-blue">本地 SEO 指南</a>
+            </div>
+          </div>
+
+          <a href="../agencies.html" class="hover:text-brand-orange transition-colors">SEO 数据平台</a>
+          <a href="../case-studies.html" class="hover:text-brand-orange transition-colors">行业研究</a>
+          
+          <div class="flex items-center gap-4 ml-2">
+            <a href="../index.html#contact" class="px-5 py-2 rounded-full bg-brand-orange text-white text-sm font-semibold hover:bg-[#e67300] transition-colors">阅读指南</a>
+          </div>
+        </nav>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div id="nav-mobile-panel" class="hidden border-t border-gray-100 bg-white md:hidden max-h-[80vh] overflow-y-auto">
+        <div class="mx-auto px-4 py-4 flex flex-col gap-4 text-sm font-medium text-brand-navy">
+          <a href="../index.html" class="hover:text-brand-orange py-2">首页</a>
+          <div class="flex flex-col gap-2">
+            <span class="text-xs uppercase tracking-wider text-brand-gray font-bold">解决方案</span>
+            <a href="../solutions/seo-services.html" class="hover:text-brand-blue pl-3 border-l-2 border-gray-100 py-1">什么是 SEO</a>
+            <a href="../solutions/geo-services.html" class="hover:text-brand-blue pl-3 border-l-2 border-gray-100 py-1">GEO (AI 概览)</a>
+            <a href="../solutions/aeo-services.html" class="hover:text-brand-blue pl-3 border-l-2 border-gray-100 py-1">AEO (答案引擎)</a>
+            <a href="../local-seo-malaysia.html" class="hover:text-brand-blue pl-3 border-l-2 border-gray-100 py-1">本地 SEO 指南</a>
+          </div>
+          <a href="../agencies.html" class="hover:text-brand-orange py-2">SEO 数据平台</a>
+          <a href="../case-studies.html" class="hover:text-brand-orange py-2">行业研究</a>
+          <a href="../index.html#contact" class="hover:text-brand-orange py-2 border-t border-gray-100">探索 SEO 知识库</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow">
+<main class="mx-auto max-w-5xl px-4 pt-28 pb-32 md:pt-36">
+      <!-- HERO -->
+      <section class="py-24 md:py-32 fade-up">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="max-w-2xl">
+            <h1 class="text-4xl md:text-5xl lg:text-[4rem] font-extrabold text-brand-navy tracking-tight leading-[1.15]">
+              马来西亚 SEO 服务<br/>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-orange via-purple-500 to-brand-blue animate-gradient leading-[1.15]">企业级算法主导。</span>
+            </h1>
+            <p class="mt-6 text-xl text-brand-navy/70 md:text-2xl leading-relaxed">
+              在 Google 上获得排名。在 AI 时代保持可见。
+            </p>
+            <p class="mt-2 text-base text-brand-navy/50">您的马来西亚 SEO 机构——涵盖技术、内容与权威建设。源自柔佛新山。</p>
+            <div class="mt-10">
+              <a href="mailto:hello@agencyahrefs.com?subject=SEO%20Services%20%7C%20策略%20Consultation" class="btn-cta inline-flex items-center gap-2 rounded-full bg-brand-orange px-8 py-3 text-sm font-semibold tracking-wide text-white shadow-xl shadow-brand-orange/30 hover:bg-[#e67300]">
+                申请战略咨询
+              </a>
+            </div>
+            <p class="mt-6 text-sm text-brand-navy/50">了解我们如何将 <a href="geo-services.html" class="text-brand-orange hover:text-brand-navy underline">生成式引擎优化 (GEO)</a> 与 <a href="aeo-services.html" class="text-brand-orange hover:text-brand-navy underline">答案引擎优化 (AEO)</a> 结合 SEO，一起打造全方位的搜索权威。<a href="../case-studies.html" class="text-brand-orange hover:text-brand-navy underline">权威成果案例</a>。</p>
+          </div>
+          <div class="relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden border border-gray-200 shadow-2xl">
+            <div class="absolute inset-0 bg-gradient-to-tr from-brand-navy/20 to-transparent mix-blend-multiply z-10 pointer-events-none"></div>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1600" alt="Enterprise SEO Data" class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-[1.03]" />
+            <div class="absolute bottom-4 right-4 z-20">
+              <span class="px-3 py-1.5 rounded-full bg-white/90 backdrop-blur-md text-xs font-bold tracking-widest uppercase text-brand-navy shadow-sm">SEO 核心技术</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- QUICK INTRODUCTION -->
+      <section class="py-24 border-t border-gray-200 fade-up">
+        <p class="text-xs font-semibold uppercase tracking-[0.28em] text-brand-navy/50">为什么这很重要</p>
+        <h2 class="font-extrabold text-brand-navy md:text-2xl">为什么在 AI 搜索时代 SEO 依然重要</h2>
+        <ul class="mt-6 max-w-3xl space-y-2 text-base text-brand-navy/70">
+          <li class="flex gap-3"><span class="text-brand-orange">•</span> Google 和 AI 依然依赖可抓取、结构良好的网站。SEO 是基础。</li>
+          <li class="flex gap-3"><span class="text-brand-orange">•</span> 蓝色链接结果能带来点击和信任。AI 概览通常也会引用那些排名靠前的来源。</li>
+          <li class="flex gap-3"><span class="text-brand-orange">•</span> 我们构建适用于传统搜索和 AI 的 SEO——让您在马来西亚无处不在。</li>
+        </ul>
+      </section>
+
+      <!-- WHAT OUR SEO SERVICES FOCUS ON -->
+      <section class="py-24 border-t border-gray-200 fade-up">
+        <p class="text-xs font-semibold uppercase tracking-[0.28em] text-brand-navy/50">三大支柱</p>
+        <h2 class="font-extrabold text-brand-navy md:text-3xl">我们的 SEO 服务专注于什么</h2>
+        <p class="mt-2 text-base text-brand-navy/50">三大支柱。一个系统。</p>
+        <div class="mt-10 grid gap-6 sm:grid-cols-3">
+          <div class="rounded-2xl border border-gray-200 bg-white/[0.02] p-6">
+            <p class="text-2xl font-bold text-brand-orange">01</p>
+            <h3 class="mt-4 text-base font-semibold">技术 SEO</h3>
+            <ul class="mt-3 space-y-1 text-sm text-brand-navy/60">
+              <li>• 可抓取性与索引</li>
+              <li>• 网站速度与核心网页指标</li>
+              <li>• Schema 与结构化数据</li>
+              <li>• 移动端优先准备</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl border border-gray-200 bg-white/[0.02] p-6">
+            <p class="text-2xl font-bold text-brand-orange">02</p>
+            <h3 class="mt-4 text-base font-semibold">内容策略</h3>
+            <ul class="mt-3 space-y-1 text-sm text-brand-navy/60">
+              <li>• 关键词与意图映射</li>
+              <li>• 主题集群与权威性</li>
+              <li>• 页面优化</li>
+              <li>• 答案型内容</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl border border-gray-200 bg-white/[0.02] p-6">
+            <p class="text-2xl font-bold text-brand-orange">03</p>
+            <h3 class="mt-4 text-base font-semibold">权威建设</h3>
+            <ul class="mt-3 space-y-1 text-sm text-brand-navy/60">
+              <li>• 高质量反向链接</li>
+              <li>• E-E-A-T 信号</li>
+              <li>• 品牌提及与引用</li>
+              <li>• 本地与实体信号</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR SEO FRAMEWORK -->
+      <section class="py-24 border-t border-gray-200 fade-up">
+        <p class="text-xs font-semibold uppercase tracking-[0.28em] text-brand-navy/50">四个步骤</p>
+        <h2 class="mt-3 text-2xl font-semibold md:text-3xl">我们的 SEO 框架</h2>
+        <p class="mt-2 text-base text-brand-navy/50">我们采用的循序渐进流程。</p>
+        <ol class="mt-10 space-y-4">
+          <li class="flex gap-4 rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <span class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-brand-red/50 text-sm font-bold text-brand-orange">1</span>
+            <div>
+              <strong class="text-sm">审核</strong>
+              <p class="mt-0.5 text-base text-brand-navy/60">技术健康度、内容差距以及竞争对手定位。</p>
+            </div>
+          </li>
+          <li class="flex gap-4 rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <span class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-brand-red/50 text-sm font-bold text-brand-orange">2</span>
+            <div>
+              <strong class="text-sm">策略</strong>
+              <p class="mt-0.5 text-base text-brand-navy/60">关键词优先级、主题集群以及快速见效方案。</p>
+            </div>
+          </li>
+          <li class="flex gap-4 rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <span class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-brand-red/50 text-sm font-bold text-brand-orange">3</span>
+            <div>
+              <strong class="text-sm">优化</strong>
+              <p class="mt-0.5 text-base text-brand-navy/60">页面优化、技术修复以及内容生产。</p>
+            </div>
+          </li>
+          <li class="flex gap-4 rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <span class="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-brand-red/50 text-sm font-bold text-brand-orange">4</span>
+            <div>
+              <strong class="text-sm">权威与扩展</strong>
+              <p class="mt-0.5 text-base text-brand-navy/60">链接建设、媒体提及与持续监测。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- SEO vs GEO vs AEO -->
+      <section class="py-24 border-t border-gray-200 fade-up">
+        <p class="text-xs font-semibold uppercase tracking-[0.28em] text-brand-navy/50">Compare</p>
+        <h2 class="mt-3 text-2xl font-semibold md:text-3xl">SEO、GEO 与 AEO 的配合方式</h2>
+        <p class="mt-2 text-base text-brand-navy/50">三者如何协同，为您建立完整的搜索权威。</p>
+        <div class="mt-8 overflow-x-auto">
+          <table class="w-full min-w-[520px] border-collapse text-sm">
+            <thead>
+              <tr class="border-b border-gray-200">
+                  <th class="py-3 pr-4 text-left font-semibold text-brand-navy/90">侧重点</th>
+                <th class="py-3 px-4 text-left font-semibold text-brand-navy/90">SEO</th>
+                <th class="py-3 px-4 text-left font-semibold text-brand-navy/90">GEO</th>
+                <th class="py-3 pl-4 text-left font-semibold text-brand-navy/90">AEO</th>
+              </tr>
+            </thead>
+            <tbody class="text-brand-navy/70">
+              <tr class="border-b border-gray-200">
+                <td class="py-3 pr-4 text-brand-navy/50">目标</td>
+                <td class="py-3 px-4">在搜索结果中获得排名</td>
+                <td class="py-3 px-4">在 AI 概览中被引用</td>
+                <td class="py-3 pl-4">在对话中被点名为答案</td>
+              </tr>
+              <tr class="border-b border-gray-200">
+                <td class="py-3 pr-4 text-brand-navy/50">出现位置</td>
+                <td class="py-3 px-4">Google 蓝色链接、搜索结果页 (SERP)</td>
+                <td class="py-3 px-4">Google AI Overviews、SGE</td>
+                <td class="py-3 pl-4">ChatGPT、Perplexity 等答案引擎</td>
+              </tr>
+              <tr class="border-b border-gray-200">
+                <td class="py-3 pr-4 text-brand-navy/50">结果</td>
+                <td class="py-3 px-4">您被看见</td>
+                <td class="py-3 px-4">您被详细解释</td>
+                <td class="py-3 pl-4">您被点名为答案</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-6 max-w-2xl text-base text-brand-navy/60">我们同时布局 SEO、GEO 和 AEO，让您的品牌既能获得排名，又能出现在 AI 概览中，并被点名为答案。<a href="../seo-vs-geo-vs-aeo.html" class="text-brand-orange hover:text-brand-navy underline">查看 SEO、GEO 与 AEO 的详细对比</a>。</p>
+      </section>
+
+      <!-- WHY MALAYSIA NEED SEO -->
+      <section class="py-24 border-t border-gray-200 fade-up">
+        <p class="text-xs font-semibold uppercase tracking-[0.28em] text-brand-navy/50">Malaysia</p>
+        <h2 class="mt-3 text-2xl font-semibold md:text-3xl">为什么马来西亚企业需要 SEO</h2>
+        <ul class="mt-8 space-y-3 text-base text-brand-navy/70">
+          <li class="flex gap-3"><span class="text-brand-orange">•</span> 本地搜索量不断增长。客户会搜索“马来西亚最佳 [服务]”以及“Johor Bahru [行业]”。</li>
+          <li class="flex gap-3"><span class="text-brand-orange">•</span> 竞争对手正在持续投入搜索。如果没有 SEO，您会把曝光度和信任拱手让给他们。</li>
+          <li class="flex gap-3"><span class="text-brand-orange">•</span> Google 和各类 AI 都偏好结构清晰、权威性强的网站。SEO 为马来西亚及东盟市场打下这一基础。</li>
+          <li class="flex gap-3"><span class="text-brand-orange">•</span> 一个系统：SEO + GEO + AEO 既带来蓝色链接排名，也带来 AI 答案中的引用。我们三者一起做。</li>
+        </ul>
+      </section>
+
+      <!-- OUR SEO SERVICES INCLUDE -->
+      <section class="py-24 border-t border-gray-200 fade-up">
+        <p class="text-xs font-semibold uppercase tracking-[0.28em] text-brand-navy/50">What we do</p>
+        <h2 class="mt-3 text-2xl font-semibold md:text-3xl">我们的 SEO 服务包括</h2>
+        <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+          <li class="flex items-start gap-3 rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <span class="text-brand-orange">✓</span>
+            <span class="text-base text-brand-navy/80">技术 SEO 审核</span>
+          </li>
+          <li class="flex items-start gap-3 rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <span class="text-brand-orange">✓</span>
+            <span class="text-base text-brand-navy/80">页面优化</span>
+          </li>
+          <li class="flex items-start gap-3 rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <span class="text-brand-orange">✓</span>
+            <span class="text-base text-brand-navy/80">内容策略与主题集群</span>
+          </li>
+          <li class="flex items-start gap-3 rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <span class="text-brand-orange">✓</span>
+            <span class="text-base text-brand-navy/80">权威建设与外链</span>
+          </li>
+          <li class="flex items-start gap-3 rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <span class="text-brand-orange">✓</span>
+            <span class="text-base text-brand-navy/80">AI 搜索优化（GEO + AEO）</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- MID-PAGE CTA -->
+      <section class="py-24 border-t border-gray-200 fade-up">
+        <div class="rounded-2xl border border-brand-red/40 bg-brand-orange/5 px-6 py-10 text-center md:px-10">
+          <h2 class="text-xl font-semibold md:text-2xl">想要一份清晰的 SEO 战略吗？</h2>
+          <p class="mt-3 max-w-lg mx-auto text-base text-brand-navy/70">预约战略咨询，我们会告诉您目前所处的位置，以及优先需要修复的环节。</p>
+          <a href="mailto:hello@agencyahrefs.com?subject=SEO%20Services%20%7C%20策略%20Consultation" class="btn-cta mt-6 inline-block rounded-full bg-brand-orange px-8 py-3 text-sm font-semibold text-white shadow-xl shadow-brand-orange/30 hover:bg-[#e67300]">查看 SEO 指南</a>
+        </div>
+      </section>
+
+      <!-- 常见问题 (FAQ) -->
+      <section class="py-24 border-t border-gray-200 fade-up">
+        <p class="text-xs font-semibold uppercase tracking-[0.28em] text-brand-navy/50">常见问题 (FAQ)</p>
+        <h2 class="mt-3 text-2xl font-semibold md:text-3xl">关于 SEO 的常见问题</h2>
+        <div class="mt-10 space-y-2">
+          <div class="seo-faq rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <button class="seo-faq-btn flex w-full items-center justify-between text-left text-sm font-semibold">
+              什么是 SEO？
+              <span class="seo-faq-icon text-brand-navy/50">+</span>
+            </button>
+          <p class="seo-faq-answer mt-3 hidden text-sm text-brand-navy/60 leading-relaxed">SEO（搜索引擎优化）是一套提升网站与内容质量的实践，让搜索引擎愿意给您更高的排名。它涵盖技术健康度、关键词布局、内容质量以及权威信号等方面。</p>
+          </div>
+          <div class="seo-faq rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <button class="seo-faq-btn flex w-full items-center justify-between text-left text-sm font-semibold">
+              为什么要选择马来西亚本地的 SEO 机构？
+              <span class="seo-faq-icon text-brand-navy/50">+</span>
+            </button>
+          <p class="seo-faq-answer mt-3 hidden text-sm text-brand-navy/60 leading-relaxed">本地经验意味着我们理解马来西亚及东盟地区的搜索行为、语言习惯和竞争环境。同时，我们会把 SEO 与 GEO、AEO 结合起来，一并提升您在 AI 搜索中的可见度。</p>
+          </div>
+          <div class="seo-faq rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <button class="seo-faq-btn flex w-full items-center justify-between text-left text-sm font-semibold">
+              做 SEO 多久才能看到效果？
+              <span class="seo-faq-icon text-brand-navy/50">+</span>
+            </button>
+          <p class="seo-faq-answer mt-3 hidden text-sm text-brand-navy/60 leading-relaxed">技术与页面层面的改进通常在数周内就能看到影响；排名和权威度的提升一般需要 3–6 个月逐步累积。我们的重点是可持续的长期增长。</p>
+          </div>
+          <div class="seo-faq rounded-xl border border-gray-200 bg-white/[0.02] px-5 py-4">
+            <button class="seo-faq-btn flex w-full items-center justify-between text-left text-sm font-semibold">
+              如果已经在做 GEO 和 AEO，还需要 SEO 吗？
+              <span class="seo-faq-icon text-brand-navy/50">+</span>
+            </button>
+          <p class="seo-faq-answer mt-3 hidden text-sm text-brand-navy/60 leading-relaxed">需要。SEO 是一切的基础。GEO 和 AEO 都建立在良好的 SEO 之上，帮助您在 AI 概览和答案引擎中被引用。我们建议三者同时布局，才能获得完整的搜索权威。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="py-24 border-t border-gray-200 fade-up">
+        <div class="rounded-2xl border border-brand-red/40 bg-brand-orange/5 px-6 py-12 text-center md:px-12">
+          <h2 class="text-xl font-semibold md:text-2xl">获取您的 SEO 战略咨询</h2>
+          <p class="mt-2 text-base text-brand-navy/60">告诉我们您的目标，我们会为您制定清晰的执行路线。</p>
+          <a href="mailto:hello@agencyahrefs.com?subject=SEO%20Services%20%7C%20策略%20Consultation" class="btn-cta mt-6 inline-block rounded-full bg-brand-orange px-8 py-3 text-sm font-semibold text-white shadow-xl shadow-brand-orange/30 hover:bg-[#e67300]">查看 SEO 指南</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-gray-200 text-brand-navy pt-16 pb-8">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="grid md:grid-cols-3 gap-12 mb-12">
+
+          <!-- LEFT: Brand + Description -->
+          <div class="md:col-span-1">
+            <a href="../index.html" class="flex items-center gap-3 mb-5">
+              <img src="../../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain">
+            </a>
+            <p class="text-sm text-brand-navy/60 leading-relaxed">
+              Agency Ahrefs 是中文互联网领先的 SEO、GEO 与 AEO 权威知识库。我们系统化解析搜索引擎优化、AI 概览与答案引擎的底层逻辑，提供业界最权威的深度指南、行业研究与数据评测，帮助企业与从业者在瞬息万变的搜索格局中掌握制胜先机。
+            </p>
+          </div>
+
+          <!-- RIGHT: Quick Links (2 columns) -->
+          <div class="md:col-span-2">
+            <h3 class="font-bold text-brand-navy mb-6 text-base uppercase tracking-wider">快速链接</h3>
+            <div class="grid grid-cols-2 gap-x-8 gap-y-4 text-base text-brand-navy/70 font-medium">
+              <a href="../index.html" class="hover:text-brand-orange transition-colors">首页</a>
+              <a href="../articles/on-page-seo-guide.html" class="hover:text-brand-orange transition-colors">页面内优化 SEO</a>
+              <a href="../articles/link-building-guide.html" class="hover:text-brand-orange transition-colors">页面外优化 SEO</a>
+              <a href="../articles/content-seo-strategy.html" class="hover:text-brand-orange transition-colors">SEO 内容写作</a>
+              <a href="../case-studies.html" class="hover:text-brand-orange transition-colors">成功案例</a>
+              <a href="../industries/b2b.html" class="hover:text-brand-orange transition-colors">企业级 SEO</a>
+              <a href="../solutions/seo-services.html" class="hover:text-brand-orange transition-colors">SEO 服务</a>
+              <a href="../agencies.html" class="hover:text-brand-orange transition-colors">SEO 套餐</a>
+              <a href="../ai-search-optimization.html" class="hover:text-brand-orange transition-colors">AI SEO 服务</a>
+              <a href="../solutions/aeo-services.html" class="hover:text-brand-orange transition-colors">AEO 服务</a>
+              <a href="../local-seo-malaysia.html" class="hover:text-brand-orange transition-colors">本地 SEO 服务</a>
+              <a href="../industries/ecommerce.html" class="hover:text-brand-orange transition-colors">电商 SEO</a>
+              <a href="../solutions/geo-services.html" class="hover:text-brand-orange transition-colors">国际 SEO</a>
+              <a href="../articles.html" class="hover:text-brand-orange transition-colors">SEO 文章</a>
+              <a href="../articles/technical-seo-guide.html" class="hover:text-brand-orange transition-colors">技术 SEO</a>
+              <a href="../articles/link-building-guide.html" class="hover:text-brand-orange transition-colors">外链建设</a>
+              <a href="../articles.html" class="hover:text-brand-orange transition-colors">所有文章</a>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-brand-navy/40">
+          <p>&copy; <span id="year"></span> Agency Ahrefs. 保留所有权利。</p>
+          <div class="flex gap-6">
+            <a href="mailto:hello@agencyahrefs.com" class="hover:text-brand-navy transition-colors">hello@agencyahrefs.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      
+      // Mobile Nav Toggle
+      (function() {
+        const toggle = document.getElementById('nav-toggle');
+        const panel = document.getElementById('nav-mobile-panel');
+        const iconOpen = document.getElementById('nav-icon-open');
+        const iconClose = document.getElementById('nav-icon-close');
+        
+        if (toggle && panel) {
+          toggle.addEventListener('click', function() {
+            const isOpen = !panel.classList.contains('hidden');
+            panel.classList.toggle('hidden', isOpen);
+            if (iconOpen) iconOpen.classList.toggle('hidden', !isOpen);
+            if (iconClose) iconClose.classList.toggle('hidden', isOpen);
+            toggle.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+          });
+        }
+      })();
+
+      // Intersection Observer for fade-up animation
+      (function() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+      })();
+    </script>
+  </body>
+</html>
+
+
+
+
+
+

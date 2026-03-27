@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+  <link rel="icon" href="../assets/logo_transparent.png"/>
+  <meta charset="UTF-8"/>
+  <title>技术SEO完整指南：让搜索引擎高效抓取您的网站 | Agency Ahrefs</title>
+  <meta name="description" content="全面解析技术SEO核心要素：网站速度、Core Web Vitals、结构化数据、XML Sitemap、robots.txt与网站架构优化。"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="canonical" href="https://agencyahrefs.com/articles/technical-seo-guide.html"/>
+  <meta property="og:title" content="技术SEO完整指南：让搜索引擎高效抓取您的网站 | Agency Ahrefs"/>
+  <meta property="og:description" content="全面解析技术SEO核心要素：网站速度、Core Web Vitals、结构化数据、XML Sitemap、robots.txt与网站架构优化。"/>
+  <meta property="og:type" content="article"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','system-ui','sans-serif'] }, colors: { brand: { orange:'#ff8000', blue:'#1462ff', navy:'#012f56', gray:'#5e617d', light:'#f8fafc' } } } } };
+  </script>
+  <style>body{font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;} .prose h2{font-size:1.5rem;font-weight:700;margin-top:2.5rem;margin-bottom:1rem;color:#012f56;} .prose h3{font-size:1.1rem;font-weight:600;margin-top:1.5rem;margin-bottom:.5rem;color:#012f56;} .prose p{margin-bottom:1rem;line-height:1.8;color:#374151;} .prose ul{list-style:disc;padding-left:1.5rem;margin-bottom:1rem;} .prose li{margin-bottom:.4rem;line-height:1.7;color:#374151;} .prose table{width:100%;border-collapse:collapse;margin:1.5rem 0;} .prose th{background:#012f56;color:#fff;padding:.6rem 1rem;text-align:left;font-size:.85rem;} .prose td{padding:.6rem 1rem;border-bottom:1px solid #e5e7eb;font-size:.9rem;} .tag{display:inline-block;padding:.2rem .7rem;border-radius:9999px;font-size:.7rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;}</style>
+</head>
+<body class="bg-white text-brand-navy">
+<header class="fixed inset-x-0 top-0 z-40 border-b border-gray-100 bg-white/95 backdrop-blur-md shadow-sm">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
+    <a href="../index.html" class="flex items-center gap-2"><img src="../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain"></a>
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-brand-navy">
+      <a href="../index.html" class="hover:text-brand-orange">首页</a>
+      <a href="../solutions/seo-services.html" class="hover:text-brand-orange">什么是 SEO</a>
+      <a href="../solutions/geo-services.html" class="hover:text-brand-orange">什么是 GEO</a>
+      <a href="../solutions/aeo-services.html" class="hover:text-brand-orange">什么是 AEO</a>
+      <a href="../agencies.html" class="hover:text-brand-orange">SEO 数据平台</a>
+      <a href="../case-studies.html" class="hover:text-brand-orange">权威成果</a>
+    </nav>
+  </div>
+</header>
+<main class="mx-auto max-w-3xl px-4 pt-28 pb-24">
+  <div class="mb-8">
+    <span class="tag bg-brand-orange/10 text-brand-orange">技术 SEO</span>
+    <span class="ml-3 text-xs text-brand-gray">阅读时间：15 分钟</span>
+  </div>
+  <h1 class="text-3xl md:text-4xl font-extrabold text-brand-navy leading-tight tracking-tight">技术SEO完整指南：让搜索引擎高效抓取您的网站</h1>
+  <p class="mt-4 text-brand-gray text-sm">由 Agency Ahrefs 知识团队整理 · 更新于 2024 年</p>
+  <hr class="my-8 border-gray-200"/>
+  <div class="prose">
+<h2>什么是技术 SEO？</h2>
+<p>技术 SEO（Technical SEO）是指通过优化网站的技术层面，确保搜索引擎爬虫能够高效地<strong>发现、抓取、解析和索引</strong>您的网页内容。它是 SEO 三大支柱之一，另外两个是内容 SEO 和外链建设。</p>
+<p>即便您的内容质量再高，如果搜索引擎无法正常抓取和索引，也无法获得排名。技术 SEO 就是解决这一根本问题。</p>
+
+<h2>Core Web Vitals：Google 的体验评分标准</h2>
+<table>
+<tr><th>指标</th><th>衡量内容</th><th>优良标准</th></tr>
+<tr><td>LCP（最大内容绘制）</td><td>主要内容加载速度</td><td>≤ 2.5 秒</td></tr>
+<tr><td>INP（交互到下一次绘制）</td><td>页面响应速度</td><td>≤ 200 毫秒</td></tr>
+<tr><td>CLS（累积布局偏移）</td><td>视觉稳定性</td><td>≤ 0.1</td></tr>
+</table>
+
+<h2>网站速度优化策略</h2>
+<h3>图片优化</h3>
+<p>图片通常是页面体积最大的元素。建议使用 WebP 格式替代 JPEG/PNG，实现懒加载（Lazy Loading），并指定图片尺寸避免布局偏移。</p>
+<h3>启用缓存</h3>
+<p>设置浏览器缓存（Browser Caching）和服务端缓存，减少重复请求，显著提升回访用户的加载速度。</p>
+<h3>CDN（内容分发网络）</h3>
+<p>使用 Cloudflare 等 CDN 将资源分发至离用户最近的服务器节点，降低延迟。</p>
+<h3>最小化 CSS/JS</h3>
+<p>压缩并合并 CSS 和 JavaScript 文件，移除未使用的代码，减少文件体积。</p>
+
+<h2>网站架构与爬虫优化</h2>
+<h3>XML Sitemap</h3>
+<p>Sitemap 是告诉搜索引擎您的网站有哪些页面的地图文件。提交至 Google Search Console，确保所有重要页面都能被索引。</p>
+<h3>robots.txt</h3>
+<p>通过 robots.txt 文件控制哪些页面允许爬虫访问，哪些需要屏蔽（如后台登录页、重复内容页）。但切勿错误屏蔽重要页面。</p>
+<h3>网站层级结构</h3>
+<p>遵循"3次点击原则"：用户和爬虫从首页出发，最多 3 次点击应能到达任意重要页面。扁平化的网站结构有利于权重传递和爬取效率。</p>
+<h3>内链优化</h3>
+<p>合理的内部链接体系能帮助爬虫发现新页面，同时将页面权重（PageRank）有效分配至重要落地页。</p>
+
+<h2>结构化数据（Schema Markup）</h2>
+<p>结构化数据是用标准化格式（JSON-LD）向搜索引擎提供页面额外信息，帮助触发富媒体搜索结果（Rich Results），如星级评分、FAQ 展开、面包屑导航等。</p>
+<ul>
+<li><strong>Article Schema</strong>：文章页适用，显示发布时间和作者</li>
+<li><strong>FAQ Schema</strong>：常见问题页，可触发 FAQ 富媒体展示</li>
+<li><strong>LocalBusiness Schema</strong>：本地商户，显示营业时间和地址</li>
+<li><strong>Product Schema</strong>：电商产品页，显示价格和评分</li>
+</ul>
+
+<h2>HTTPS 与安全性</h2>
+<p>HTTPS 是 Google 的排名因子之一。确保网站使用 SSL 证书，所有 HTTP 流量自动跳转至 HTTPS，避免混合内容（Mixed Content）错误。</p>
+
+<h2>移动端优化（Mobile-First）</h2>
+<p>Google 采用移动优先索引（Mobile-First Indexing），以移动端版本内容为排名依据。确保网站在手机端完整显示所有内容，响应式设计是最低标准。</p>
+
+<h2>技术 SEO 常用检测工具</h2>
+<ul>
+<li><strong>Google Search Console</strong>：官方工具，查看索引状态、核心体验报告</li>
+<li><strong>Screaming Frog</strong>：全站爬虫，扫描技术问题</li>
+<li><strong>PageSpeed Insights</strong>：Core Web Vitals 检测</li>
+<li><strong>Ahrefs Site Audit</strong>：全面技术健康度扫描</li>
+</ul></div>
+  <div class="mt-16 rounded-2xl bg-orange-50 border border-brand-orange/20 px-6 py-10 text-center">
+    <h2 class="text-xl font-bold text-brand-navy">探索更多 SEO 知识</h2>
+    <p class="mt-2 text-sm text-brand-gray">深入了解 SEO、GEO 与 AEO 的完整知识体系</p>
+    <a href="../seo-vs-geo-vs-aeo.html" class="mt-6 inline-block rounded-full bg-brand-orange px-8 py-3 text-sm font-semibold text-white hover:bg-[#e67300]">查看 SEO vs GEO vs AEO 对比</a>
+  </div>
+</main>
+<footer class="bg-white border-t border-gray-200 text-brand-navy pt-16 pb-8 mt-24">
+  <div class="mx-auto max-w-6xl px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+      <div class="col-span-2">
+        <a href="../index.html" class="flex items-center gap-2 mb-4"><img src="../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain"></a>
+        <p class="text-sm text-brand-navy/60 max-w-xs">中文互联网领先的 SEO、GEO 与 AEO 知识库。权威解析搜索引擎优化、AI 概览与答案引擎的原理与策略。</p>
+      </div>
+      <div><h3 class="font-bold text-brand-navy mb-4 text-sm">知识体系</h3><ul class="space-y-2 text-sm text-brand-navy/60">
+        <li><a href="../solutions/seo-services.html" class="hover:text-brand-orange">什么是 SEO</a></li>
+        <li><a href="../solutions/geo-services.html" class="hover:text-brand-orange">什么是 GEO</a></li>
+        <li><a href="../solutions/aeo-services.html" class="hover:text-brand-orange">什么是 AEO</a></li>
+        <li><a href="../local-seo-malaysia.html" class="hover:text-brand-orange">本地 SEO</a></li>
+      </ul></div>
+      <div><h3 class="font-bold text-brand-navy mb-4 text-sm">SEO 文章</h3><ul class="space-y-2 text-sm text-brand-navy/60">
+        <li><a href="seo-keyword-research.html" class="hover:text-brand-orange">关键词研究指南</a></li>
+        <li><a href="technical-seo-guide.html" class="hover:text-brand-orange">技术SEO完整指南</a></li>
+        <li><a href="link-building-guide.html" class="hover:text-brand-orange">外链建设策略</a></li>
+        <li><a href="on-page-seo-guide.html" class="hover:text-brand-orange">On-Page SEO指南</a></li>
+      </ul></div>
+    </div>
+    <div class="pt-8 border-t border-gray-200 flex justify-between items-center text-xs text-brand-navy/40">
+      <p>&copy; <span id="year"></span> Agency Ahrefs. 保留所有权利。</p>
+      <a href="mailto:hello@agencyahrefs.com" class="hover:text-brand-navy">hello@agencyahrefs.com</a>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body></html>
