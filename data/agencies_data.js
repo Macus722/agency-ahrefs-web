@@ -2,7 +2,7 @@ const agencyData = [
   {
     "id": "brandthirty",
     "name": "BrandThirty",
-    "tagline": "企业级搜索架构与全球增长策略",
+    "tagline": "全球AI优化公司 | 企业级搜索架构与全球增长策略",
     "logo": "assets/images/brandthirty-logo.png",
     "logoBg": "#ffffff",
     "rating": 9.9,
