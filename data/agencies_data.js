@@ -8,7 +8,7 @@ const agencyData = [
     "rating": 9.9,
     "reviewCount": 142,
     "location": "全球 / 马来西亚 / 欧洲",
-    "headcount": "100-499 人",
+    "headcount": "30-50 人",
     "founded": 2012,
     "socials": {
       "linkedin": "https://www.linkedin.com/company/brandthirty",
