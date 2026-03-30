@@ -2,10 +2,10 @@
 <html lang="zh-CN">
 <head>
     <link rel="stylesheet" href="./assets/tailwind.min.css">
-  <link rel="icon" href="../../../../../assets/logo_transparent.png" />
+  <link rel="icon" href="assets/logo_transparent.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>机构详情 | Agency Ahrefs</title><script>
+    <title>æœºæž„è¯¦æƒ… | Agency Ahrefs</title><script>
       tailwind.config = {
         theme: {
           extend: {
@@ -51,12 +51,12 @@
     <header class="fixed inset-x-0 top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur-xl shadow-sm">
     
       <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
-        <a href="index.html" class="flex items-center gap-3">
-          <img src="../../../../../assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain" loading="eager">
+        <a href="index" class="flex items-center gap-3">
+          <img src="assets/logo_transparent.png" alt="Agency Ahrefs SEO Authority Logo" class="h-8 w-auto object-contain" loading="eager">
         </a>
-        <a href="agencies.html" class="flex items-center gap-2 text-brand-gray hover:text-brand-orange font-bold transition-colors text-sm">
+        <a href="agencies" class="flex items-center gap-2 text-brand-gray hover:text-brand-orange font-bold transition-colors text-sm">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-          返回列表
+          è¿”å›žåˆ—è¡¨
         </a>
       </div>
     </header>
@@ -65,9 +65,9 @@
         
         <!-- Not Found State -->
         <div id="not-found" class="hidden text-center py-20 max-w-2xl mx-auto">
-            <h1 class="text-4xl font-black text-slate-900 mb-4">未找到该机构</h1>
-            <p class="text-slate-600 mb-8 font-medium">您查找的机构可能已被移除或地址不正确，请返回机构目录。</p>
-            <a href="agencies.html" class="inline-flex px-8 py-3 bg-brand-blue text-white font-bold rounded-xl hover:bg-blue-700 transition-colors shadow-lg shadow-blue-100">返回目录</a>
+            <h1 class="text-4xl font-black text-slate-900 mb-4">æœªæ‰¾åˆ°è¯¥æœºæž„</h1>
+            <p class="text-slate-600 mb-8 font-medium">æ‚¨æŸ¥æ‰¾çš„æœºæž„å¯èƒ½å·²è¢«ç§»é™¤æˆ–åœ°å€ä¸æ­£ç¡®ï¼Œè¯·è¿”å›žæœºæž„ç›®å½•ã€‚</p>
+            <a href="agencies" class="inline-flex px-8 py-3 bg-brand-blue text-white font-bold rounded-xl hover:bg-blue-700 transition-colors shadow-lg shadow-blue-100">è¿”å›žç›®å½•</a>
         </div>
 
         <div id="profile-content" class="opacity-0 transition-opacity duration-500">
@@ -83,14 +83,14 @@
                     <!-- Profile Details -->
                     <div class="flex-grow flex flex-col justify-center py-1">
                         <h1 class="text-4xl flex flex-wrap items-center gap-3 font-black text-slate-900 tracking-tight font-heading mb-3">
-                            <span id="agency-name">机构名称</span>
+                            <span id="agency-name">æœºæž„åç§°</span>
                             <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-600 text-[13px] font-black tracking-widest uppercase border border-emerald-100 shadow-sm mt-1 sm:mt-0">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                权威评测认证
+                                æƒå¨è¯„æµ‹è®¤è¯
                             </span>
                         </h1>
                         
-                        <div id="agency-tagline" class="text-brand-blue font-bold text-lg mb-6">机构服务标语</div>
+                        <div id="agency-tagline" class="text-brand-blue font-bold text-lg mb-6">æœºæž„æœåŠ¡æ ‡è¯­</div>
                         
                         <div class="flex flex-wrap items-center gap-x-8 gap-y-3 text-[14px] font-bold text-slate-500">
                             <!-- Rating -->
@@ -99,7 +99,7 @@
                                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
                                     <span id="agency-rating" class="text-slate-800 text-[16px]">0.0</span>
                                 </span>
-                                <span>综合评分</span>
+                                <span>ç»¼åˆè¯„åˆ†</span>
                             </div>
                             <!-- Reviews -->
                             <div class="flex items-center gap-2">
@@ -107,14 +107,14 @@
                                     <svg class="w-5 h-5 opacity-40 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
                                     <span id="agency-reviews" class="text-slate-800 text-[16px]">0</span>
                                 </span>
-                                <span>条权威评价</span>
+                                <span>æ¡æƒå¨è¯„ä»·</span>
                             </div>
                         </div>
 
                         <!-- Action Buttons -->
                         <div class="mt-8 flex flex-wrap items-center gap-4">
                             <a id="agency-website-btn" href="#" target="_blank" class="inline-flex items-center gap-2 px-7 py-3.5 bg-brand-navy text-white font-black rounded-xl hover:bg-slate-800 transition-colors shadow-lg shadow-slate-200 uppercase tracking-wide text-sm">
-                                访问官方网站
+                                è®¿é—®å®˜æ–¹ç½‘ç«™
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                             </a>
                             <div id="agency-socials" class="flex items-center gap-2.5">
@@ -129,7 +129,7 @@
 
             <!-- Intro Paragraph -->
             <p id="agency-description" class="text-slate-600 font-medium text-[16px] leading-[1.8] mb-14 px-2 lg:px-0">
-                加载中...
+                åŠ è½½ä¸­...
             </p>
 
             <!-- Grid -->
@@ -137,7 +137,7 @@
                 
                 <!-- Business Overview -->
                 <div class="bg-white rounded-[2rem] p-10 shadow-sm border border-gray-100 h-full">
-                    <h2 class="text-[22px] font-black text-slate-900 mb-8 tracking-tight font-heading">业务概览</h2>
+                    <h2 class="text-[22px] font-black text-slate-900 mb-8 tracking-tight font-heading">ä¸šåŠ¡æ¦‚è§ˆ</h2>
                     
                     <div id="overview-list" class="space-y-6 relative">
                         <!-- Inserted dynamically -->
@@ -146,7 +146,7 @@
 
                 <!-- Core Expertise -->
                 <div class="bg-white rounded-[2rem] p-10 shadow-sm border border-gray-100 h-full">
-                    <h2 class="text-[22px] font-black text-slate-900 mb-8 tracking-tight font-heading">核心专长与体系</h2>
+                    <h2 class="text-[22px] font-black text-slate-900 mb-8 tracking-tight font-heading">æ ¸å¿ƒä¸“é•¿ä¸Žä½“ç³»</h2>
                     
                     <div id="expertise-list" class="space-y-5">
                         <!-- Inserted dynamically -->
@@ -159,24 +159,24 @@
             <section class="mb-16 px-2 lg:px-0">
                 <h2 class="text-[22px] font-black text-slate-900 mb-8 tracking-tight font-heading flex items-center gap-3">
                     <svg class="w-6 h-6 text-brand-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    平台评测结论
+                    å¹³å°è¯„æµ‹ç»“è®º
                 </h2>
                 <div class="text-[16px] text-slate-600 leading-[1.8] space-y-7">
-                    <p id="agency-verdict" class="bg-slate-100 p-8 rounded-2xl border border-slate-200 italic font-medium border-l-4 border-l-brand-orange text-slate-700">加载中...</p>
+                    <p id="agency-verdict" class="bg-slate-100 p-8 rounded-2xl border border-slate-200 italic font-medium border-l-4 border-l-brand-orange text-slate-700">åŠ è½½ä¸­...</p>
                 </div>
             </section>
 
             <!-- Market Coverage -->
             <section class="mb-20 px-2 lg:px-0">
-                <h2 class="text-[22px] font-black text-slate-900 mb-6 tracking-tight font-heading">市场与客户画像</h2>
+                <h2 class="text-[22px] font-black text-slate-900 mb-6 tracking-tight font-heading">å¸‚åœºä¸Žå®¢æˆ·ç”»åƒ</h2>
                 <div class="text-[16px] text-slate-600 leading-[1.8] space-y-7 font-medium">
-                    <p id="agency-market">加载中...</p>
+                    <p id="agency-market">åŠ è½½ä¸­...</p>
                 </div>
             </section>
 
             <!-- Frequently Asked Questions -->
             <section class="mb-24 px-2 lg:px-0">
-                <h2 class="text-[22px] font-black text-slate-900 mb-8 tracking-tight font-heading">常见问题与解答 (FAQ)</h2>
+                <h2 class="text-[22px] font-black text-slate-900 mb-8 tracking-tight font-heading">å¸¸è§é—®é¢˜ä¸Žè§£ç­” (FAQ)</h2>
                 <div id="agency-faq" class="flex flex-col gap-3">
                     <!-- Inserted dynamically -->
                 </div>
@@ -203,7 +203,7 @@
             }
 
             // Populate Text Elements
-            document.title = data.name + " | 机构详情 | Agency Ahrefs";
+            document.title = data.name + " | æœºæž„è¯¦æƒ… | Agency Ahrefs";
             document.getElementById('agency-name').innerText = data.name;
             document.getElementById('agency-tagline').innerText = data.tagline;
             document.getElementById('agency-rating').innerText = (data.rating / 2).toFixed(1);
@@ -234,7 +234,7 @@
             socialsContainer.innerHTML = socialsHtml;
             
             // Market Coverage text
-            const marketText = `${data.name} 的核心服务语言包含 <strong class="text-slate-900">${data.languages.join('、')}</strong>，其地理业务重心主要分布在 <strong class="text-slate-900">${data.geoFocus.join('、')}</strong> 等市场。在目标客户体量方面，他们专注于服务 <strong class="text-slate-900">${data.clientSize.join('、')}</strong> 级别的品牌，并且在 <strong class="text-slate-900">${data.industries.join('、')}</strong> 等重点行业拥有深厚的战略执行经验。`;
+            const marketText = `${data.name} çš„æ ¸å¿ƒæœåŠ¡è¯­è¨€åŒ…å« <strong class="text-slate-900">${data.languages.join('ã€')}</strong>ï¼Œå…¶åœ°ç†ä¸šåŠ¡é‡å¿ƒä¸»è¦åˆ†å¸ƒåœ¨ <strong class="text-slate-900">${data.geoFocus.join('ã€')}</strong> ç­‰å¸‚åœºã€‚åœ¨ç›®æ ‡å®¢æˆ·ä½“é‡æ–¹é¢ï¼Œä»–ä»¬ä¸“æ³¨äºŽæœåŠ¡ <strong class="text-slate-900">${data.clientSize.join('ã€')}</strong> çº§åˆ«çš„å“ç‰Œï¼Œå¹¶ä¸”åœ¨ <strong class="text-slate-900">${data.industries.join('ã€')}</strong> ç­‰é‡ç‚¹è¡Œä¸šæ‹¥æœ‰æ·±åŽšçš„æˆ˜ç•¥æ‰§è¡Œç»éªŒã€‚`;
             document.getElementById('agency-market').innerHTML = marketText;
 
             // Logo setup
@@ -255,8 +255,8 @@
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                     </div>
                     <div>
-                        <p class="text-slate-400 font-bold uppercase tracking-wider text-[11px] mb-0.5">成立年份</p>
-                        <h3 class="font-black text-slate-900 text-[15px]">${data.founded} 年</h3>
+                        <p class="text-slate-400 font-bold uppercase tracking-wider text-[11px] mb-0.5">æˆç«‹å¹´ä»½</p>
+                        <h3 class="font-black text-slate-900 text-[15px]">${data.founded} å¹´</h3>
                     </div>
                 </div>
                 
@@ -265,7 +265,7 @@
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                     </div>
                     <div>
-                        <p class="text-slate-400 font-bold uppercase tracking-wider text-[11px] mb-0.5">总部核心位置</p>
+                        <p class="text-slate-400 font-bold uppercase tracking-wider text-[11px] mb-0.5">æ€»éƒ¨æ ¸å¿ƒä½ç½®</p>
                         <h3 class="font-black text-slate-900 text-[15px]">${data.location}</h3>
                     </div>
                 </div>
@@ -275,7 +275,7 @@
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                     </div>
                     <div>
-                        <p class="text-slate-400 font-bold uppercase tracking-wider text-[11px] mb-0.5">全球团队规模</p>
+                        <p class="text-slate-400 font-bold uppercase tracking-wider text-[11px] mb-0.5">å…¨çƒå›¢é˜Ÿè§„æ¨¡</p>
                         <h3 class="font-black text-slate-900 text-[15px]">${data.headcount}</h3>
                     </div>
                 </div>
@@ -285,7 +285,7 @@
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                     </div>
                     <div>
-                        <p class="text-slate-400 font-bold uppercase tracking-wider text-[11px] mb-0.5">参考起步预算与典型周期</p>
+                        <p class="text-slate-400 font-bold uppercase tracking-wider text-[11px] mb-0.5">å‚è€ƒèµ·æ­¥é¢„ç®—ä¸Žå…¸åž‹å‘¨æœŸ</p>
                         <h3 class="font-black text-slate-900 text-[15px]">${data.budget} / ${data.duration}</h3>
                     </div>
                 </div>
@@ -325,7 +325,7 @@
                         </span>
                     </summary>
                     <div class="px-6 pb-6 pt-2 text-slate-600 text-[15.5px] leading-[1.8] font-medium border-t border-gray-100 bg-white">
-                        <span class="text-slate-400 font-bold mr-2 text-[14px]">答:</span>${faq.a}
+                        <span class="text-slate-400 font-bold mr-2 text-[14px]">ç­”:</span>${faq.a}
                     </div>
                 </details>
                 `;
@@ -338,6 +338,7 @@
     </script>
 </body>
 </html>
+
 
 
 
