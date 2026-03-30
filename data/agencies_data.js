@@ -33,6 +33,7 @@ const agencyData = [
       "马来语"
     ],
     "services": [
+      "全球AI优化公司",
       "搜索架构",
       "企业级 SEO",
       "内容策略",
