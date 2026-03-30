@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <link rel="stylesheet" href="./assets/tailwind.min.css">
@@ -125,26 +125,7 @@
                 </div>
             </div>
 
-            <!-- Live Website Preview Showcase -->
-            <div id="agency-preview-container" class="mb-14 hidden group relative w-full rounded-3xl overflow-hidden border border-gray-200 bg-gray-100 shadow-sm aspect-video md:aspect-[21/9] hover:shadow-xl transition-shadow">
-                <!-- Loading Spinner -->
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <svg class="animate-spin w-8 h-8 text-brand-blue/40" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
-                </div>
-                <!-- Dynamic Image -->
-                <img id="agency-preview-img" src="" alt="Live Website Preview" class="w-full h-full object-cover object-top relative z-10 transition-transform duration-[1.5s] ease-out group-hover:scale-[1.03] cursor-pointer" onclick="window.open(document.getElementById('agency-website-btn').href, '_blank')" onload="this.previousElementSibling.style.display='none'" onerror="this.parentElement.style.display='none'" loading="lazy">
-                
-                <!-- Gradient Overlay -->
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/10 to-transparent z-20 pointer-events-none"></div>
-                
-                <!-- Authority Badge Label -->
-                <div class="absolute bottom-6 left-6 md:left-8 z-30 flex items-center gap-3">
-                    <span class="px-3.5 py-1.5 bg-black/40 backdrop-blur-md rounded-lg text-white text-[13px] font-bold border border-white/20 shadow-sm flex items-center gap-2">
-                        <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg>
-                        官方机构实时影像抓取
-                    </span>
-                </div>
-            </div>
+
 
             <!-- Intro Paragraph -->
             <p id="agency-description" class="text-slate-600 font-medium text-[16px] leading-[1.8] mb-14 px-2 lg:px-0">
@@ -232,21 +213,12 @@
 
             // Links and Socials
             const websiteBtn = document.getElementById('agency-website-btn');
-            const previewContainer = document.getElementById('agency-preview-container');
-            const previewImg = document.getElementById('agency-preview-img');
 
             if (data.website) {
                 websiteBtn.href = data.website;
                 websiteBtn.style.display = 'inline-flex';
-                
-                // Construct Thumbnail live capture API call
-                const targetUrl = data.website.replace(/^https?:\/\//, ''); 
-                previewImg.src = `https://image.thum.io/get/width/1200/crop/800/noanimate/https://${targetUrl}`;
-                previewContainer.classList.remove('hidden');
-                previewContainer.classList.add('block');
             } else {
                 websiteBtn.style.display = 'none';
-                previewContainer.classList.add('hidden');
             }
 
             const socialsContainer = document.getElementById('agency-socials');
